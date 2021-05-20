@@ -45,15 +45,35 @@ export const Scroll = (props:ScrollProps):JSX.Element => {
 
     const mobileMarkup = ():JSX.Element => {
         return(
-            <div className='mobile'>
-                mobile
+            <div className='scroll-mobile'>
+                <nav className='links'>
+                    <button 
+                        className={`bee-container ${renderButtonAtYOffset()}`} 
+                        onClick={()=> callParentScroll(props.refs.headerRef)}
+                        >
+                            <i className="fas fa-arrow-up"></i>
+                        </button>
+                </nav>            
             </div>
         )
     }
     const desktopMarkup = ():JSX.Element => {
         return(
-            <div className='desktop'>
-                desktop
+            <div className='scroll-desktop'>
+                <nav className='links'>
+                    <button onClick={()=> callParentScroll(props.refs.headerRef)}>
+                        <i className="fas fa-arrow-up"></i>
+                    </button>
+                    <button onClick={()=> callParentScroll(props.refs.aboutRef)}>
+                        <i className="far fa-user"></i>
+                    </button>
+                    <button onClick={()=> callParentScroll(props.refs.projectsRef)}>
+                        <i className="fas fa-code-branch"></i>
+                    </button>
+                    <button onClick={()=> callParentScroll(props.refs.footerRef)}>
+                        <i className="far fa-envelope"></i>
+                    </button>
+                </nav>
             </div>
         )
     }
