@@ -1,10 +1,10 @@
 import React, {useRef} from 'react';
-import { WidthProvider } from './contexts/WidthContext';
-import { Header } from './components/Header';
-import { About } from './components/About';
-import { Projects } from './components/Projects';
-import { Footer } from './components/Footer';
-import './App.css';
+import { WidthProvider } from '../contexts/WidthContext';
+import { Header } from './Header';
+import { About } from './About';
+import { Projects } from './Projects';
+import { Footer } from './Footer';
+import '../styles/App.scss';
 
 function App() {
 
