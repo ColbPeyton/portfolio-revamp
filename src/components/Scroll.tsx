@@ -1,5 +1,6 @@
 import React,{useContext, useState, useEffect} from 'react';
 import {WidthContext, WidthState} from '../contexts/WidthContext';
+import {renderBasedOnScreen} from '../_utils/renderBasedOnScreenSize';
 
 interface ScrollProps{
     refs: {
@@ -42,9 +43,25 @@ export const Scroll = (props:ScrollProps):JSX.Element => {
         props.scrollToComponent(ref);
     }
 
+    const mobileMarkup = ():JSX.Element => {
+        return(
+            <div className='mobile'>
+                mobile
+            </div>
+        )
+    }
+    const desktopMarkup = ():JSX.Element => {
+        return(
+            <div className='desktop'>
+                desktop
+            </div>
+        )
+    }
+
+
     return (
         <div className='container-scroll'>
-            scroll
+            {renderBasedOnScreen(width, mobileMarkup, desktopMarkup)}
         </div>
     )
 }
