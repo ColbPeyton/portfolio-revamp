@@ -2,13 +2,13 @@ import React from 'react';
 
 interface SkillProps{
     color: string;
-    name: string;
+    title: string;
 }
 
-export const SkillBar = (props:SkillProps):JSX.Element => {
+export const Skill = (props:SkillProps):JSX.Element => {
     return(
         <div className='container-skill' style={{'backgroundColor': props.color}}>
-            <h4>{props.name}</h4>
+            <h4>{props.title}</h4>
         </div>
     )
 }
