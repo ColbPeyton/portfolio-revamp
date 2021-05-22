@@ -1,6 +1,10 @@
 import React,{useContext, useState, useEffect} from 'react';
 import {WidthContext, WidthState} from '../contexts/WidthContext';
 import {renderBasedOnScreen} from '../_utils/renderBasedOnScreenSize';
+import emailIcon from '../assets/icons/email.svg';
+import aboutIcon from '../assets/icons/contact.svg';
+import gitIcon from '../assets/icons/git.svg';
+import arrowIcon from '../assets/icons/keyboard_arrow_right-24px.svg';
 
 interface ScrollProps{
     refs: {
@@ -62,16 +66,16 @@ export const Scroll = (props:ScrollProps):JSX.Element => {
             <div className='scroll-desktop'>
                 <nav className='links'>
                     <button onClick={()=> callParentScroll(props.refs.headerRef)}>
-                        <i className="fas fa-arrow-up"></i>
+                        <img src={arrowIcon} alt='arrow'/>          
                     </button>
                     <button onClick={()=> callParentScroll(props.refs.aboutRef)}>
-                        <i className="far fa-user"></i>
+                        <img src={aboutIcon} alt='contact'/>          
                     </button>
                     <button onClick={()=> callParentScroll(props.refs.projectsRef)}>
-                        <i className="fas fa-code-branch"></i>
+                        <img src={gitIcon} alt='git'/>
                     </button>
                     <button onClick={()=> callParentScroll(props.refs.footerRef)}>
-                        <i className="far fa-envelope"></i>
+                        <img src={emailIcon} alt='email'/>
                     </button>
                 </nav>
             </div>
