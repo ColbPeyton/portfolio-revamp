@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import { ProjectView, ProjectViewProps} from './ProjectView';
+import {data} from '../_data/data';
 
 interface ProjectState{
     activeProject: string;
@@ -9,11 +10,20 @@ export const Projects = ():JSX.Element => {
 
     const [activeProject, setActiveProject] = useState<ProjectState['activeProject']>('');
 
-    // const renderList = ():JSX.Element => {
-    //     return(
-
-    //     )
-    // }
+    const renderList = ():JSX.Element[] => {
+        return data.map((el: ProjectViewProps['project'], index: number) => {
+            return(
+                <div className='container-project-view'>
+                    <button className='container-project' onClick={()=> handleClick(el.name)}>
+                        <h3>{el.name}</h3>
+                    </button>
+                    <div className='container-view'>
+                        {shouldRenderView(el.name, el)}
+                    </div>
+                </div>
+            )
+        })
+    }
 
     const handleClick = (title: string):void => {
         if(title === activeProject){
@@ -23,15 +33,15 @@ export const Projects = ():JSX.Element => {
         }
     }
 
-    const shouldRenderView = (title:string, details:ProjectViewProps):JSX.Element => {
+    const shouldRenderView = (title:string, details:ProjectViewProps['project']):JSX.Element => {
         return title === activeProject
-        ? <ProjectView project={details.project} />
+        ? <ProjectView project={details} />
         : <div></div>
     }
 
     return(
         <div className='container-projects'>
-
+            {renderList()}
         </div>
     )
 }

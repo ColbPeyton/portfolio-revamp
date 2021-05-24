@@ -47,7 +47,7 @@ export const About = ():JSX.Element => {
 
                     <Skill title={'TypeScript'} color={'#FA60EE'}/>
 
-                    <Skill title={'React JS'} color={'#0390F8'}/>
+                    <Skill title={'React'} color={'#0390F8'}/>
 
                     <Skill title={'Python'} color={'#DC60FA'}/>
 
