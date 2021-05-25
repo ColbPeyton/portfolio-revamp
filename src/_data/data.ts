@@ -1,13 +1,36 @@
-const js = {title: 'JavaScript', color: '#03BFF8'};
-const ts = {title: 'TypeScript', color: '#FA60EE'};
-const react = {title: 'React', color: '#0390F8'};
-const node = {title: 'Node.js', color: '#6C60FA'};
-const html = {title: 'HTML/CSS', color: '#BF60FA'};
-const sass = {title: 'SASS', color: '#6C60FA'};
-const redux = {title: 'Redux', color: '#DC60FA'};
-const mysql = {title: 'Redux', color: '#0390F8'};
-const rRouter = {title: 'React Router', color: '#BF60FA'};
-const context = {title: 'Context', color: '#6C60FA'};
+// return color based on position in tech array
+const generateColor = (pos:number):string => {
+    switch(pos){
+        case 0:
+            return '#03BFF8';
+        case 1:
+            return '#0390F8';
+        case 2:
+            return '#6C60FA';
+        case 3:
+            return '#BF60FA';
+        case 4:
+            return '#DC60FA';
+        case 5:
+            return '#FA60EE';
+        default:
+            return '#03BFF8'
+    }
+}
+
+
+
+
+const js = 'JavaScript';
+const react = 'React';
+const ts = 'TypeScript';
+const node = 'Node.js';
+const html = 'HTML/CSS';
+const sass = 'SASS';
+const redux = 'Redux';
+const mysql = 'Redux';
+const rRouter = 'React Router';
+const context = 'Context';
 
 
 
@@ -23,11 +46,11 @@ export const data: {
     {
         name: 'GoGoDango',
         technology: [
-            ts, 
-            react,
-            context, 
-            html, 
-            sass,
+            {title: ts, color: generateColor(0)}, 
+            {title: react, color: generateColor(1)}, 
+            {title: context, color: generateColor(2)}, 
+            {title: html, color: generateColor(3)}, 
+            {title: sass, color: generateColor(4)}, 
         ],
         about: 'Fan project to design dango combinations from Monster Hunter Rise. Developed as practice to utilize typescript and react context.',
         url: 'https://colbpeyton.github.io/design-dango/',
@@ -36,12 +59,12 @@ export const data: {
     {
         name: 'Pixel Bee E-Commerce',
         technology: [
-            js,
-            react, 
-            html, 
-            sass,
-            rRouter, 
-            redux
+            {title: js, color: generateColor(0)}, 
+            {title: react, color: generateColor(1)}, 
+            {title: rRouter, color: generateColor(2)}, 
+            {title: redux, color: generateColor(3)}, 
+            {title: html, color: generateColor(4)}, 
+            {title: sass, color: generateColor(5)}, 
         ],
         about: 'Practice ecommerce site for a local designer.',
         url: 'https://unruffled-ptolemy-7b3a78.netlify.app/#/',
@@ -51,10 +74,11 @@ export const data: {
     {
         name: 'The Factory',
         technology: [
-            js,
-            react, 
-            sass, 
-            html
+            {title: js, color: generateColor(0)}, 
+            {title: react, color: generateColor(1)}, 
+            {title: rRouter, color: generateColor(2)}, 
+            {title: html, color: generateColor(3)}, 
+            {title: sass, color: generateColor(4)}, 
         ],
         about: 'Practice website for a fictional gym',
         url: 'https://nifty-turing-8d4e6e.netlify.app/',
@@ -63,13 +87,13 @@ export const data: {
     {
         name: 'Dr. Hoops',
         technology: [
-            js,
-            react,
-            node, 
-            rRouter, 
-            sass, 
-            html, 
-            mysql
+            {title: js, color: generateColor(0)}, 
+            {title: react, color: generateColor(1)}, 
+            {title: rRouter, color: generateColor(2)}, 
+            {title: node, color: generateColor(3)}, 
+            {title: mysql, color: generateColor(4)}, 
+            {title: html, color: generateColor(5)}, 
+            {title: sass, color: generateColor(4)}, 
         ],
         about: 'Sports Spread site for college basketball. No longer hosted.',
         url: '',
