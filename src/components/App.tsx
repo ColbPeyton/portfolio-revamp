@@ -22,7 +22,7 @@ function App() {
     <div className="container-app">
       <WidthProvider>
         <header className='container-app-header' ref={headerRef}>
-          <Header />
+          <Header aboutRef={aboutRef} scrollToComponent={scrollToComponent}/>
         </header>
         <div className='container-app-scroll'>
           <Scroll scrollToComponent={scrollToComponent} refs={{headerRef, aboutRef, projectsRef, footerRef}} />
