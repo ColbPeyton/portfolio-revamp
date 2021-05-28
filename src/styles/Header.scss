@@ -118,6 +118,9 @@
         overflow: hidden;
         background: none;
         background-color: $header-background;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .container-header-markup{
             width: 100%;
             height: 100%;
@@ -129,8 +132,8 @@
                 width: 50%;
                 height: 90%;
                 img{
-                    width: 100%;
-                    height: auto;
+                    max-width: 100%;
+                    max-height: 100%;
                 }
             }
             .header-content{
@@ -150,28 +153,15 @@
                 .header-info{
                     width: 90%;
                     height: 45%;
-                    font-size: 1.5rem;
+                    font-size: 1.6rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     text-align: left;
                 }
+
                 .header-button{
-                    width: 100%;
-                    height: 15%;
-                    display: flex;
                     justify-content: flex-start;
-                    align-items: center;
-                    button{
-                        width: 75px;
-                        height: 75px;
-                        background: none;
-                        transform: rotate(90deg);
-                        img{
-                            width: 100%;
-                            height: auto;
-                        }
-                    }
                 }
             }
         }
@@ -179,9 +169,40 @@
 }
 
 
-@media (min-width: 992px) { }
+@media (min-width: 992px) {
+    .container-header{
+        height: 25vh;
+        min-height: 425px;
+        max-height: 475px;
+        .container-header-markup{
+            .header-image{
+                width: 50%;
+            }
+            .header-content{
+                width: 45%;    
+                .header-title{
+                    height: 40%;
+                    font-size: 2rem;
+                }
+                .header-info{
+                    width: 85%;
+                    height: 45%;
+                    font-size: 1.75rem;
+                }
 
-@media (min-width: 1200px) { }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-header{
+        min-height: 450px;
+        .container-header-markup{
+            max-width: 1200px;
+        }
+    }
+ }
 
 
 
