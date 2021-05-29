@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Skill.scss';
 
 interface SkillProps{
     color: string;
