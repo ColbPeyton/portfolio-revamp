@@ -4,6 +4,8 @@ import { Timeline } from './Timeline';
 import school from '../assets/icons/school.svg';
 import work from '../assets/icons/work.svg';
 
+import '../styles/About.scss';
+
 export const About = ():JSX.Element => {
     return(
         <div className='container-about'>

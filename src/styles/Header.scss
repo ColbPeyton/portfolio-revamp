@@ -1,4 +1,5 @@
 @import './colors';
+@import './font';
 
 .container-header{
     width: 100%;
@@ -199,7 +200,7 @@
     .container-header{
         min-height: 450px;
         .container-header-markup{
-            max-width: 1200px;
+            max-width: $max-app-width;
         }
     }
  }
