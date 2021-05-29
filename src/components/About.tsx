@@ -9,33 +9,36 @@ import '../styles/About.scss';
 export const About = ():JSX.Element => {
     return(
         <div className='container-about'>
-            <div className='container-timeline'>
-            <div className='timeline-education'>
-                <Timeline 
-                    timeline={{
-                        icon: school,
-                        title1: 'B.S. I.T. Development',
-                        title2: 'B.A. Political Science',
-                        text1: 'The University of Southern Mississippi',
-                        text2: 'The University of Southern Mississippi',
-                        date1:'2017-2020',
-                        date2: '2011-2016'
-                    }}
-                />
+            <div className='container-title'>
+                <h1>About</h1>
             </div>
-            <div>
-                <Timeline 
+            <div className='container-timeline'>
+                <div className='timeline-education'>
+                    <Timeline 
                         timeline={{
-                            icon: work,
-                            title1: 'Application Manager',
-                            title2: 'Best Buy',
+                            icon: school,
+                            title1: 'B.S. I.T. Development',
+                            title2: 'B.A. Political Science',
                             text1: 'The University of Southern Mississippi',
-                            text2: 'Hattiesburg, Mississippi',
+                            text2: 'The University of Southern Mississippi',
                             date1:'2017-2020',
                             date2: '2011-2016'
                         }}
                     />
-            </div>
+                </div>
+                <div className='timeline-education'>
+                    <Timeline 
+                            timeline={{
+                                icon: work,
+                                title1: 'Application Manager',
+                                title2: 'Best Buy',
+                                text1: 'The University of Southern Mississippi',
+                                text2: 'Hattiesburg, Mississippi',
+                                date1:'2017-2020',
+                                date2: '2011-2016'
+                            }}
+                        />
+                </div>
             </div>
             <div className='container-skills'>
                 <div className='skills-title'> 
