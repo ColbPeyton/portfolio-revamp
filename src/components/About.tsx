@@ -12,7 +12,7 @@ export const About = ():JSX.Element => {
             <div className='container-title'>
                 <h1>About</h1>
             </div>
-            <div className='container-timeline'>
+            <div className='container-timelines'>
                 <div className='timeline-education'>
                     <Timeline 
                         timeline={{

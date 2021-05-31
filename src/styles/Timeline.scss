@@ -36,3 +36,51 @@
 
     }
 }
+
+
+@media (min-width: 576px) {
+    .container-timeline{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .timeline-icon{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+    
+            img{
+                width: 85px;
+                height: auto;
+            }
+    
+        }
+        .timeline-list{
+            width: 95%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul{
+                li{
+                    padding-bottom: 10px;
+                    h4{
+                        font-size: 1.5rem;
+                    }
+                    p{
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+    
+        }
+    }
+    
+ }
+
+@media (min-width: 768px) { }
+
+@media (min-width: 992px) { }
+
+@media (min-width: 1200px) { }
