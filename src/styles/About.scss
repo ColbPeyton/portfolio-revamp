@@ -117,14 +117,33 @@
         }
         .container-skills{
             height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
             .skills-title{
+                width: 20%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 font-size: 2rem;
             }
             .skills-icon{
-                display: none;
+                width: 20%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             .skills-bar{
-                width: 75%;
+                width: 50%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto;
+                gap: 5px;
             }
         }
     }
@@ -138,18 +157,7 @@
         .container-timelines{
             width: 85%;
         }
-        .container-skills{
-            height: 55%;
-            .skills-title{
-                font-size: 2rem;
-            }
-            .skills-icon{
-                display: none;
-            }
-            .skills-bar{
-                width: 75%;
-            }
-        }
+
     }
 }
 
@@ -160,18 +168,6 @@
         }
         .container-timelines{
             width: 50%;
-        }
-        .container-skills{
-            height: 55%;
-            .skills-title{
-                font-size: 2rem;
-            }
-            .skills-icon{
-                display: none;
-            }
-            .skills-bar{
-                width: 75%;
-            }
         }
     }
  }
