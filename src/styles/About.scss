@@ -104,19 +104,19 @@
     .container-about{
         width: 100%;
         height: 200vh;
-        max-height: 1050px;
+        max-height: 950px;
         padding: 0 0 1rem 0;
         .container-title{
             height: 20%;
-            font-size: 2.5rem;
+            font-size: 2.75rem;
         }
         .container-timelines{
             width: 90%;
-            height: 30%;
+            height: 50%;
             flex-direction: row;
         }
         .container-skills{
-            height: 50%;
+            height: 25%;
             width: 100%;
             display: flex;
             justify-content: center;
@@ -128,17 +128,21 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
             .skills-icon{
                 width: 20%;
                 height: 100%;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-start;
+                h1{
+                    font-size: 10rem;
+                    font-weight: 400;
+                }
             }
             .skills-bar{
-                width: 50%;
+                width: 40%;
                 height: 100%;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
@@ -157,6 +161,20 @@
         .container-timelines{
             width: 85%;
         }
+        .container-skills{
+            width: 90%;
+            .skills-title{
+                font-size: 2.75rem;
+            }
+            .skills-icon{
+                h1{
+                    font-size: 10rem;
+                }
+            }
+            .skills-bar{
+                width: 40%;
+            }
+        }
 
     }
 }
@@ -168,6 +186,20 @@
         }
         .container-timelines{
             width: 50%;
+        }
+        .container-skills{
+            width: 55%;
+            .skills-title{
+                font-size: 2.75rem;
+            }
+            .skills-icon{
+                h1{
+                    font-size: 10rem;
+                }
+            }
+            .skills-bar{
+                width: 35%;
+            }
         }
     }
  }
