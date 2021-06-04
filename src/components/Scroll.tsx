@@ -85,8 +85,6 @@ export const Scroll = (props:ScrollProps):JSX.Element => {
 
 
     return (
-        <div className='container-scroll'>
-            {renderBasedOnScreen(width, mobileMarkup, desktopMarkup)}
-        </div>
+            renderBasedOnScreen(width, mobileMarkup, desktopMarkup)
     )
 }

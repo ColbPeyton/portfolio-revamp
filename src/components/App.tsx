@@ -24,9 +24,7 @@ function App() {
         <header className='container-app-header' ref={headerRef}>
           <Header aboutRef={aboutRef} scrollToComponent={scrollToComponent}/>
         </header>
-        <div className='container-app-scroll'>
           <Scroll scrollToComponent={scrollToComponent} refs={{headerRef, aboutRef, projectsRef, footerRef}} />
-        </div>
         <div className='container-app-about' ref={aboutRef}>
           <About />
         </div>
