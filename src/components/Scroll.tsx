@@ -5,6 +5,7 @@ import emailIcon from '../assets/icons/email.svg';
 import aboutIcon from '../assets/icons/contact.svg';
 import gitIcon from '../assets/icons/git.svg';
 import arrowIcon from '../assets/icons/keyboard_arrow_right-24px.svg';
+import '../styles/Scroll.scss';
 
 interface ScrollProps{
     refs: {
@@ -52,10 +53,10 @@ export const Scroll = (props:ScrollProps):JSX.Element => {
             <div className='scroll-mobile'>
                 <nav className='links'>
                     <button 
-                        className={`bee-container ${renderButtonAtYOffset()}`} 
+                        className={`up-arrow-container ${renderButtonAtYOffset()}`} 
                         onClick={()=> callParentScroll(props.refs.headerRef)}
                         >
-                            <i className="fas fa-arrow-up"></i>
+                            <img src={arrowIcon} alt='arrow' />
                         </button>
                 </nav>            
             </div>
