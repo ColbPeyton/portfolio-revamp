@@ -67,7 +67,7 @@ export const Scroll = (props:ScrollProps):JSX.Element => {
             <div className='scroll-desktop'>
                 <nav className='links'>
                     <button onClick={()=> callParentScroll(props.refs.headerRef)}>
-                        <img src={arrowIcon} alt='arrow'/>          
+                        <img src={arrowIcon} alt='arrow' style={{"transform": "rotate(-90deg)"}}/>          
                     </button>
                     <button onClick={()=> callParentScroll(props.refs.aboutRef)}>
                         <img src={aboutIcon} alt='contact'/>          
