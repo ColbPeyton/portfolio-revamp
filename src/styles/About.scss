@@ -177,32 +177,31 @@
 
 @media (min-width: 1200px) {
     .container-about{
+        max-height: 1050px;
         .container-title{
-            font-size: 3rem;
+            height: 15%;
+            font-size: 3.25rem;
         }
         .container-timelines{
-            width: 65%;
+            width: 75%;
             max-width: 1200px;
-            height: 45%;
+            height: 40%;
         }
         .container-skills{
             width: 100%;
-            height: 35%;
+            height: 40%;
             max-width: 1200px;
             .skills-title{
-                width: 20%;
-                font-size: 2.75rem;
-            }
-            .skills-icon{
-                width: 25%;
-                align-items: center;
-                justify-content: flex-start;
-                h1{
-                    font-size: 12rem;
+                width: 45%;
+                font-size: 3.15rem;
+                .skills-icon{
+                    font-size: 200px;
+                    margin-bottom: 25px;
+                
                 }
             }
             .skills-bar{
-                width: 50%;
+                max-width: 550px;
             }
         }
     }
