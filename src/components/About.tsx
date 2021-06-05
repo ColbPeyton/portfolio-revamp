@@ -43,9 +43,7 @@ export const About = ():JSX.Element => {
             <div className='container-skills'>
                 <div className='skills-title'> 
                     <h1>Skills</h1>
-                </div>
-                <div className='skills-icon'>
-                    <h1 >{`{`}</h1>
+                    <h1 className='skills-icon'>{`{`}</h1>
                 </div>
                 <div className='skills-bar'>
                     <Skill title={'JavaScript'} color={'#03BFF8'}/>
