@@ -2,9 +2,10 @@ import React,{useContext, useState, useEffect} from 'react';
 import {WidthContext, WidthState} from '../contexts/WidthContext';
 import {renderBasedOnScreen} from '../_utils/renderBasedOnScreenSize';
 import emailIcon from '../assets/icons/email.svg';
-import aboutIcon from '../assets/icons/contact.svg';
+import aboutIcon from '../assets/icons/work.svg';
 import gitIcon from '../assets/icons/git.svg';
 import arrowIcon from '../assets/icons/keyboard_arrow_right-24px.svg';
+import headerIcon from '../assets/icons/contact.svg';
 import '../styles/Scroll.scss';
 
 interface ScrollProps{
@@ -67,7 +68,7 @@ export const Scroll = (props:ScrollProps):JSX.Element => {
             <div className='scroll-desktop'>
                 <nav className='links'>
                     <button onClick={()=> callParentScroll(props.refs.headerRef)}>
-                        <img src={arrowIcon} alt='arrow' style={{"transform": "rotate(-90deg)"}}/>          
+                        <img src={headerIcon} alt='header'/>          
                     </button>
                     <button onClick={()=> callParentScroll(props.refs.aboutRef)}>
                         <img src={aboutIcon} alt='contact'/>          
