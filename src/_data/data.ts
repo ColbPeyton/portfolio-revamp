@@ -52,7 +52,7 @@ export const data: {
             {title: html, color: generateColor(3)}, 
             {title: sass, color: generateColor(4)}, 
         ],
-        about: 'Fan project to design dango combinations from Monster Hunter Rise. Developed as practice to utilize typescript and react context.',
+        about: 'Fan project to design dango combinations from Monster Hunter Rise.',
         url: 'https://colbpeyton.github.io/design-dango/',
         github: 'https://github.com/ColbPeyton/design-dango'
     },
@@ -95,7 +95,7 @@ export const data: {
             {title: html, color: generateColor(5)}, 
             {title: sass, color: generateColor(4)}, 
         ],
-        about: 'Sports Spread site for college basketball. No longer hosted.',
+        about: 'Sports Spread site for college basketball.',
         url: '',
         github: 'https://github.com/ColbPeyton/sports_spread'
     },

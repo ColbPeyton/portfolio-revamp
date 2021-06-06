@@ -1,5 +1,6 @@
 import React from "react";
 import {Skill} from './Skill';
+import '../styles/ProjectView.scss';
 
 export interface ProjectViewProps{
     project:{
@@ -22,10 +23,7 @@ export const ProjectView = (props: ProjectViewProps):JSX.Element => {
     }
 
     return(
-        <div className='container-project-view'>
-            <div className='container-view-title'>
-                <h2>{props.project.name}</h2>
-            </div>
+        <div className='container-single-project-view'>
             <div className='container-view-about'>
                 <p>{props.project.about}</p>
             </div>
