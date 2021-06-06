@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import { ProjectView, ProjectViewProps} from './ProjectView';
 import {data} from '../_data/data';
+import '../styles/Projects.scss';
 
 interface ProjectState{
     activeProject: string;
@@ -41,6 +42,9 @@ export const Projects = ():JSX.Element => {
 
     return(
         <div className='container-projects'>
+            <div className='container-title'>
+                <h1>Projects</h1>
+            </div>
             {renderList()}
         </div>
     )
