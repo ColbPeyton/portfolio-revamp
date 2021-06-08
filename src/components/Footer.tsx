@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../styles/Footer.scss';
 
 export const Footer = ():JSX.Element => {
     return(

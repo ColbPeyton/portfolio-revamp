@@ -19,7 +19,7 @@ export const Projects = ():JSX.Element => {
                         <h3>{el.name}</h3>
                     </button>
                     <div className='container-view'>
-                        {shouldRenderView(el.name, el)}
+                        {el.name === activeProject && <ProjectView project={el} />}
                     </div>
                 </div>
             )
@@ -34,11 +34,6 @@ export const Projects = ():JSX.Element => {
         }
     }
 
-    const shouldRenderView = (title:string, details:ProjectViewProps['project']):JSX.Element => {
-        return title === activeProject
-        ? <ProjectView project={details} />
-        : <div></div>
-    }
 
     return(
         <div className='container-projects'>
