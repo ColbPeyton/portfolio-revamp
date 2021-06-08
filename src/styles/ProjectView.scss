@@ -1,6 +1,6 @@
 @import './colors';
 .container-single-project-view{
-    width: 95%;
+    width: 90%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
@@ -27,3 +27,42 @@
         gap: 5px;
     }
 }
+
+@media (min-width: 576px) { 
+    .container-single-project-view{
+        width: 80%;
+        height: 100%;
+        .container-view-about{
+            width: 85%;
+            height: 45%;
+            font-size: 1.25rem;
+        }
+        .container-view-technology{
+            width: 85%;
+            height: 50%;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media (min-width: 768px) { 
+    .container-single-project-view{
+        width: 75%;
+        max-width: 600px;
+        height: 100%;
+        .container-view-about{
+            width: 85%;
+            height: 45%;
+            font-size: 1.5rem;
+        }
+        .container-view-technology{
+            width: 85%;
+            height: 50%;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media (min-width: 992px) { }
+
+@media (min-width: 1200px) { }
