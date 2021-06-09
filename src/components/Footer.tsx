@@ -6,7 +6,7 @@ export const Footer = ():JSX.Element => {
         <footer className='container-footer'>
             <div className='footer-top'>
                 <div className='footer-img'>
-                    {/* <img src={profile} alt='me' /> */}
+                    <img src={'images/profile_img.jpg'} alt='me' />
                 </div>
                 <div className='footer-tagline'>
                     <h3>Let's Work Together.</h3>

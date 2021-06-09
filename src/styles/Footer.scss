@@ -2,7 +2,8 @@
 
 .container-footer{
     width: 100%;
-    height: 15vh;
+    height: 25vh;
+    min-height: 275px;
     background-color: $top-gradient;
     display: flex;
     justify-content: center;
@@ -10,51 +11,57 @@
     flex-direction: column;
     .footer-top{
         width: 100%;
-        height: 45%;
+        height: 55%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
         .footer-img{
             width: 100%;
-            height: 50%;
+            height: 65%;
             display: flex;
             justify-content: center;
             align-items: center;
             img{
-                width: 100%;
-                height: auto;
+                max-width: auto;
+                max-height: 100%;
+                border-radius: 15px;
+                box-shadow: 10px 10px 10px $bottom-gradiant;
             }
         }
         .footer-tagline{
             width: 100%;
-            height: 50%;
+            height: 30%;
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 1.5rem;
         }
     }
     .footer-bot{
         width: 100%;
-        height: 45%;
+        height: 40%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
         .footer-name{
             width: 100%;
-            height: 100%;
+            height: 40%;
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 1.35rem;
         }
         .footer-links{
             width: 100%;
-            height: 100%;
+            height: 60%;
             display: flex;
             justify-content: space-around;
             align-items: center;
             flex-direction: column;
+            font-weight: 100;
+            font-size: 1.25rem;
         }
     }
 }
