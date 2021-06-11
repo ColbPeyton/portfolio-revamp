@@ -3,12 +3,15 @@
 .container-footer{
     width: 100%;
     height: 25vh;
-    min-height: 275px;
+    min-height: 300px;
     background-color: $top-gradient;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: .5rem 0;
     .footer-top{
         width: 100%;
         height: 55%;
@@ -30,12 +33,13 @@
             }
         }
         .footer-tagline{
-            width: 100%;
+            width: 95%;
             height: 30%;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 1.5rem;
+            font-size: 1.15rem;
+
         }
     }
     .footer-bot{
@@ -51,7 +55,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 1.35rem;
+            font-size: 1.05rem;
         }
         .footer-links{
             width: 100%;
@@ -61,7 +65,8 @@
             align-items: center;
             flex-direction: column;
             font-weight: 100;
-            font-size: 1.25rem;
+            font-size: 1rem;
+            text-transform: lowercase;
         }
     }
 }
