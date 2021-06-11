@@ -70,3 +70,71 @@
         }
     }
 }
+
+
+@media (min-width: 425px) {
+    .container-footer{
+        width: 100%;
+        height: 30vh;
+        max-height: 350px;
+        .footer-top{
+            .footer-tagline{
+                font-size: 1.5rem;
+            }
+        }
+        .footer-bot{
+            .footer-name{
+                font-size: 1.25rem;
+            }
+            .footer-links{
+                font-size: 1.15rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .container-footer{
+        width: 100%;
+        height: 25vh;
+        min-height: 250px;
+        max-height: 325px;
+        .footer-top{
+            width: 80%;
+            height: 55%;
+            flex-direction: row;
+            .footer-img{
+                width: 50%;
+                height: 85%;
+            }
+            .footer-tagline{
+                width: 50%;
+                height: 100%;
+                font-size: 1.85rem;
+                text-align: center;
+    
+            }
+        }
+        .footer-bot{
+            width: 80%;
+            .footer-name{
+                width: 100%;
+                height: 35%;
+                font-size: 1.45rem;
+            }
+            .footer-links{
+                height: 65%;
+                font-size: 1.25rem;
+                a{
+                    margin: 2px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) { }
+
+@media (min-width: 992px) { }
+
+@media (min-width: 1200px) { }
