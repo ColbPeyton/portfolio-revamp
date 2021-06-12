@@ -10,7 +10,7 @@ export const About = ():JSX.Element => {
     return(
         <div className='container-about'>
             <div className='container-title'>
-                <h1>About</h1>
+                <h1>ABOUT</h1>
             </div>
             <div className='container-timelines'>
                 <div className='timeline-education'>
@@ -42,7 +42,7 @@ export const About = ():JSX.Element => {
             </div>
             <div className='container-skills'>
                 <div className='skills-title'> 
-                    <h1>Skills</h1>
+                    <h1>SKILLS</h1>
                     <h1 className='skills-icon'>{`{`}</h1>
                 </div>
                 <div className='skills-bar'>
