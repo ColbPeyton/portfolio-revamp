@@ -15,7 +15,7 @@ export const Projects = ():JSX.Element => {
         return data.map((el: ProjectViewProps['project'], index: number) => {
             return(
                 <div className='container-project-view'>
-                    <button className='container-project' onClick={()=> handleClick(el.name)}>
+                    <button className={`container-project ${el.name.replace(/\./g, '').replace(/ /g, '_')}`} onClick={()=> handleClick(el.name)}>
                         <h3>{el.name}</h3>
                     </button>
                     <div className='container-view'>
