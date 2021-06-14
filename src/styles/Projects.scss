@@ -4,7 +4,7 @@
 .container-projects{
     width: 100%;
     height: 200vh;
-    max-height: 900px;
+    max-height: 875px;
     background-color: $header-background;
     display: flex;
     justify-content: space-around;
@@ -13,7 +13,7 @@
     
     .container-title{
         width: 100%;
-        height: 10%;
+        height: 15%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -21,7 +21,7 @@
     }
     .container-projects-list{
         width: 100%;
-        height: 85%;
+        flex: 1;
 
         .container-project-view{
             width: 100%;
