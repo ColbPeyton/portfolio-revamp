@@ -24,9 +24,9 @@ export const ProjectView = (props: ProjectViewProps):JSX.Element => {
 
     return(
         <div className='container-single-project-view'>
-            <div className='container-view-about'>
+            {/* <div className='container-view-about'>
                 <p>{props.project.about}</p>
-            </div>
+            </div> */}
             <div className='container-view-technology'>
                 {renderTechnology()}
             </div>

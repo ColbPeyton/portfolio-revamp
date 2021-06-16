@@ -41,7 +41,9 @@ export const Projects = ():JSX.Element => {
                 <h1>Projects</h1>
             </div>
             <div className='container-projects-list'>
-                {renderList()}
+                <div className='container-list'>
+                    {renderList()}
+                </div>
             </div>
         </div>
     )
