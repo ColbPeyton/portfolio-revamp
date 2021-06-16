@@ -5,6 +5,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &.active{
+        transform: rotate(75deg);
+    }
 }
 
 

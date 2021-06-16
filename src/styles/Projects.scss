@@ -90,10 +90,16 @@
                 }
                 .container-view{
                     width: 100%;
-                    flex: 1;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    transition: all 250ms ease-in-out;
+                    &.inactive{
+                        height: 5px;
+                    }
+                    &.active{
+                        height: 100px;
+                    }
                 }
             }
 

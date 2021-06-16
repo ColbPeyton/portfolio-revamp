@@ -18,8 +18,8 @@ export const Projects = ():JSX.Element => {
                     <button className={`container-project ${el.name.replace(/\./g, '').replace(/ /g, '_')}`} onClick={()=> handleClick(el.name)}>
                         <h3>{el.name}</h3>
                     </button>
-                    <div className='container-view'>
-                        {el.name === activeProject && <ProjectView project={el} />}
+                    <div className={`container-view ${el.name === activeProject ? 'active' : 'inactive'}`}>
+                        {el.name === activeProject && <ProjectView project={el} blade={true}/>}
                     </div>
                 </div>
             )
