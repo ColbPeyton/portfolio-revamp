@@ -28,6 +28,8 @@
         .container-list{
             width: 100%;
             height: 100%;
+            transition: all 500ms ease-in-out;
+
             .container-project-view{
                 width: 100%;
                 margin: 25px 0;
@@ -46,24 +48,31 @@
                     font-weight: 800;
                     background-color: $primary-indigo;
                     position: relative;
+
                     h3{
                         z-index: 10;
-                        display: none;
+                        opacity: 0;
+                        transition: all 500ms ease-in-out;                        
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: transparent;
+                        z-index: 1;
+                        overflow: hidden;
+                        transition: all 250ms ease-in-out;
                     }
                     &:hover{
+                        
                         &::after{
-                            content: "";
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
                             background-color: #36307d9d;
-                            z-index: 1;
-                            overflow: hidden;
                         }
                         h3{
-                            display: block;
+                            opacity: 1;
                         }
                     }
                     &.GoGoDango{
@@ -85,7 +94,6 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-    
                 }
             }
 
