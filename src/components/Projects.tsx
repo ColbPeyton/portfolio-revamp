@@ -2,6 +2,8 @@ import React,{useState} from 'react';
 import { ProjectView, ProjectViewProps} from './ProjectView';
 import {data} from '../_data/data';
 import '../styles/Projects.scss';
+import gitIcon from '../assets/icons/git.svg';
+import earthIcon from '../assets/icons/earth.svg';
 
 interface ProjectState{
     activeProject: string;
@@ -15,6 +17,10 @@ export const Projects = ():JSX.Element => {
         return data.map((el: ProjectViewProps['project'], index: number) => {
             return(
                 <div className='container-project-view'>
+                    <div className='mobile-header'>
+                        <a href={el.github}><img src={gitIcon} /></a>
+                        <a className={el.url.length > 0 ? 'hosted' : ''} href={el.url}><img src={earthIcon} /></a>
+                    </div>
                     <button className={`container-project ${el.name.replace(/\./g, '').replace(/ /g, '_')}`} onClick={()=> handleClick(el.name)}>
                         <h3>{el.name}</h3>
                     </button>
