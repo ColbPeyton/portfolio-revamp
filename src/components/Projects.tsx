@@ -1,17 +1,29 @@
-import React,{useState} from 'react';
+import React,{useState, useContext} from 'react';
 import { ProjectView, ProjectViewProps} from './ProjectView';
 import {data} from '../_data/data';
 import '../styles/Projects.scss';
-import gitIcon from '../assets/icons/git.svg';
+import gitIcon from '../assets/icons/github.png';
 import earthIcon from '../assets/icons/earth.svg';
+import {WidthState, WidthContext} from '../contexts/WidthContext';
 
 interface ProjectState{
     activeProject: string;
 }
 
+
+
 export const Projects = ():JSX.Element => {
 
     const [activeProject, setActiveProject] = useState<ProjectState['activeProject']>('');
+    const width = useContext<WidthState['width']>(WidthContext);
+
+    // const mobileViewList = ():JSX.Element => {
+        
+    // }
+
+    // const desktopViewList = ():JSX.Element => {
+        
+    // }
 
     const renderList = ():JSX.Element[] => {
         return data.map((el: ProjectViewProps['project'], index: number) => {
