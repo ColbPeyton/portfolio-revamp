@@ -18,8 +18,9 @@ export const Projects = ():JSX.Element => {
             return(
                 <div className='container-project-view'>
                     <div className='mobile-header'>
-                        <a href={el.github}><img src={gitIcon} /></a>
-                        <a className={el.url.length > 0 ? 'hosted' : ''} href={el.url}><img src={earthIcon} /></a>
+                        <a className={'github'} href={el.github}><img src={gitIcon} /></a>
+                        <h3>{el.name}</h3>
+                        <a className={el.url.length > 0 ? 'hosted' : 'not-hosted'} href={el.url}><img src={earthIcon} /></a>
                     </div>
                     <button className={`container-project ${el.name.replace(/\./g, '').replace(/ /g, '_')}`} onClick={()=> handleClick(el.name)}>
                         <h3>{el.name}</h3>
