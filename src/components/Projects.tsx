@@ -29,23 +29,24 @@ export const Projects = (): JSX.Element => {
         {data.map((el: ProjectViewProps['project'], index: number) => {
           return (
             <div className="container-project-view">
-              <div className="mobile-header">
-                <a className={'github'} href={el.github}>
-                  <img src={gitIcon} />
-                </a>
-                <h3>{el.name}</h3>
-                <a
-                  className={el.url.length > 0 ? 'hosted' : 'not-hosted'}
-                  href={el.url}
-                >
-                  <img src={earthIcon} />
-                </a>
-              </div>
               <div
                 className={`container-project ${el.name
                   .replace(/\./g, '')
                   .replace(/ /g, '_')}`}
-              ></div>
+              >
+                <div className="mobile-header">
+                  <a className={'github'} href={el.github}>
+                    <img src={gitIcon} />
+                  </a>
+                  <h3>{el.name}</h3>
+                  <a
+                    className={el.url.length > 0 ? 'hosted' : 'not-hosted'}
+                    href={el.url}
+                  >
+                    <img src={earthIcon} />
+                  </a>
+                </div>
+              </div>
             </div>
           );
         })}
