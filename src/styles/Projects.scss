@@ -10,7 +10,7 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  padding: 0 0 1rem 0;
+  padding: 0.5rem 0;
 
   .container-title {
     width: 100%;
@@ -20,6 +20,10 @@
     align-items: center;
     font-size: $title-very-small;
     text-transform: uppercase;
+    h1 {
+      font-weight: 100;
+      letter-spacing: 2px;
+    }
   }
   .container-projects-list {
     width: 100%;
