@@ -90,7 +90,7 @@ export const Projects = (): JSX.Element => {
         <h1>Projects</h1>
       </div>
       <div className="container-projects-list">
-        {width >= 549 ? desktopViewList() : mobileViewList()}
+        {width >= 579 ? desktopViewList() : mobileViewList()}
       </div>
     </div>
   );
