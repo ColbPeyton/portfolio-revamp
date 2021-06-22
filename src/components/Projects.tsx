@@ -57,6 +57,7 @@ export const Projects = (): JSX.Element => {
   const desktopViewList = (): JSX.Element => {
     return (
       <div className="container-list-desktop">
+        <div className='container-list'>
         {data.map((el: ProjectViewProps['project'], index: number) => {
           return (
             <div className="container-project-view">
@@ -80,6 +81,10 @@ export const Projects = (): JSX.Element => {
             </div>
           );
         })}
+        </div>
+        <div className='container-list-selected'>
+          <h1>{activeProject}</h1>
+        </div>
       </div>
     );
   };
