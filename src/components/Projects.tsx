@@ -11,15 +11,23 @@ interface ProjectState {
 }
 
 export const Projects = (): JSX.Element => {
-  const [activeProject, setActiveProject] =
-    useState<ProjectState['activeProject']>('');
+  const [activeProject, setActiveProject] = useState<
+    ProjectState['activeProject']
+  >(data[0].name);
+  const [activeProjectDetails, setActiveProjectDetails] = useState<
+    ProjectViewProps['project']
+  >(data[0]);
   const width = useContext<WidthState['width']>(WidthContext);
 
-  const handleClick = (title: string): void => {
+  const handleClick = (
+    title: string,
+    project: ProjectViewProps['project']
+  ): void => {
     if (title === activeProject) {
       setActiveProject('');
     } else {
       setActiveProject(title);
+      setActiveProjectDetails(project);
     }
   };
 
@@ -57,33 +65,32 @@ export const Projects = (): JSX.Element => {
   const desktopViewList = (): JSX.Element => {
     return (
       <div className="container-list-desktop">
-        <div className='container-list'>
-        {data.map((el: ProjectViewProps['project'], index: number) => {
-          return (
-            <div className="container-project-view">
-              <button
-                className={`container-project ${el.name
-                  .replace(/\./g, '')
-                  .replace(/ /g, '_')}`}
-                onClick={() => handleClick(el.name)}
-              >
-                <h3>{el.name}</h3>
-              </button>
-              <div
-                className={`container-view ${
-                  el.name === activeProject ? 'active' : 'inactive'
-                }`}
-              >
-                {el.name === activeProject && (
-                  <ProjectView project={el} blade={true} />
-                )}
+        <div className="container-list">
+          {data.map((el: ProjectViewProps['project'], index: number) => {
+            return (
+              <div className="container-project-view">
+                <button
+                  className={`container-project ${el.name
+                    .replace(/\./g, '')
+                    .replace(/ /g, '_')}`}
+                  onClick={() => handleClick(el.name, el)}
+                >
+                  <h3>{el.name}</h3>
+                </button>
+                {/* <div
+                  className={`container-view ${
+                    el.name === activeProject ? 'active' : 'inactive'
+                  }`}
+                ></div> */}
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
         </div>
-        <div className='container-list-selected'>
+        <div className="container-list-selected">
           <h1>{activeProject}</h1>
+          {activeProject && (
+            <ProjectView project={activeProjectDetails} blade={true} />
+          )}
         </div>
       </div>
     );
