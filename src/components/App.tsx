@@ -4,7 +4,7 @@ import { Header } from './Header';
 import { About } from './About';
 import { Projects } from './Projects';
 import { Scroll } from './Scroll';
-//import { Footer } from './Footer';
+import { Footer } from './Footer';
 import '../styles/App.scss';
 
 function App() {
