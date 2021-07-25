@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/TechBanner.scss';
 
 const createBannerItem = (tech: string, key: number): JSX.Element => {
   return (
