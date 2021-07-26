@@ -1,3 +1,5 @@
+@import './colors';
+
 .container-tech {
   width: 100vw;
   height: 20vh;
@@ -5,12 +7,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $primary-indigo;
   .container-banner {
     width: 100%;
     height: 75%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #36307d85;
     .banner-item {
       height: 100%;
       width: 20%;
@@ -18,6 +22,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      color: #fff;
+      font-size: 1.2rem;
     }
   }
 }
