@@ -5,12 +5,14 @@ import { About } from './About';
 import { Projects } from './Projects';
 import { Scroll } from './Scroll';
 import { Footer } from './Footer';
+import { TechBanner } from './TechBanner';
 import '../styles/App.scss';
 
 function App() {
   const headerRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
+  const bannerRef = useRef<HTMLDivElement>(null);
   const footerRef = useRef<HTMLDivElement>(null);
 
   const scrollToComponent = (ref: any): void => {
@@ -32,6 +34,9 @@ function App() {
         </div>
         <div className="container-app-projects" ref={projectsRef}>
           <Projects />
+        </div>
+        <div className="container-app-techbanner" ref={bannerRef}>
+          <TechBanner />
         </div>
         <footer className="container-app-footer" ref={footerRef}>
           <Footer />
