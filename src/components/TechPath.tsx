@@ -17,6 +17,7 @@ export const TechPath = (): JSX.Element => {
           title={item.title}
           details={item.details}
           color={colors[i]}
+          notFinal={i < temp.length - 1}
         />
       ))}
     </div>
